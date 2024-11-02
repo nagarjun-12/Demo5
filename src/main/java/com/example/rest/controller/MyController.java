@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.rest.User;
@@ -27,6 +28,13 @@ public class MyController {
 	{
 		User user = service.getUser(id);
 		return user;
+	}
+	
+	@PostMapping("save")
+	public String save(User user)
+	{
+		String sms = service.save(user);
+		return sms;
 	}
 	
 	

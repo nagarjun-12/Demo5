@@ -27,4 +27,9 @@ public class MyService {
 		return user;
 	}
 
+	public String save(User user) {
+		repo.save(user);
+		return "Successfully Done!";
+	}
+
 }
