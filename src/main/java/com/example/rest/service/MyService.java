@@ -32,4 +32,9 @@ public class MyService {
 		return "Successfully Done!";
 	}
 
+	public String delete(User user) {
+		repo.delete(user);
+		return "done";
+	}
+
 }
