@@ -45,6 +45,11 @@ public class MyController {
 		return msg;
 	}
 	
+	public void abc()
+	{
+		
+	}
+	
 	
 	
 
